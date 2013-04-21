@@ -13,8 +13,8 @@ vagrant up
 
 # Requirement
 
-working virtualbox setup
-vagrant installed
+* working virtualbox setup
+* vagrant installed
 
 # if you want to modify or reuse modules
 

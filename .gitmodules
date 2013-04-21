@@ -22,6 +22,9 @@
 [submodule "modules/xinetd"]
 	path = modules/xinetd
 	url = https://github.com/theforeman/puppet-xinetd.git
+[submodule "modules/tftp"]
+	path = modules/tftp
+	url = https://github.com/theforeman/puppet-tftp.git
 [submodule "modules/apache"]
 	path = modules/apache
 	url = git@github.com:zivis/puppet-apache.git

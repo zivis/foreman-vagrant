@@ -9,7 +9,7 @@
 	url = https://github.com/theforeman/puppet-dns.git
 [submodule "modules/foreman"]
 	path = modules/foreman
-	url = https://github.com/theforeman/puppet-foreman.git
+	url = git://github.com/zivis/puppet-foreman.git
 [submodule "modules/foreman_proxy"]
 	path = modules/foreman_proxy
 	url = https://github.com/theforeman/puppet-foreman_proxy.git
@@ -27,7 +27,7 @@
 	url = https://github.com/theforeman/puppet-tftp.git
 [submodule "modules/apache"]
 	path = modules/apache
-	url = git://github.com:zivis/puppet-apache.git
+	url = git://github.com/zivis/puppet-apache.git
 [submodule "modules/passenger"]
 	path = modules/passenger
-	url = git://github.com:zivis/puppet-passenger.git
+	url = git://github.com/zivis/puppet-passenger.git

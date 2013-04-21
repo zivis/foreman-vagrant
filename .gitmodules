@@ -25,3 +25,6 @@
 [submodule "modules/apache"]
 	path = modules/apache
 	url = git@github.com:zivis/puppet-apache.git
+[submodule "modules/passenger"]
+	path = modules/passenger
+	url = git@github.com:zivis/puppet-passenger.git

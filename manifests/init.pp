@@ -18,6 +18,18 @@ if ! $::osfamily {
   }
 }
 
+if ! $::lsbdistcodename {
+  case $::operatingsystem {
+    'Debian' : {
+      case $::operatingsystemrelease {
+        '6.0.6' : {
+	  $lsbdistcodename = 'squeeze'
+	}
+      }
+    } 
+  }
+}
+
 include foreman
 include foreman_proxy
 include puppet

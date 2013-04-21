@@ -1,5 +1,5 @@
 [submodule "tftp"]
-	path = modules/modules/tftp
+	path = modules/tftp
 	url = https://github.com/theforeman/puppet-tftp.git
 [submodule "apache"]
 	path = modules/apache

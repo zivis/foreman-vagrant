@@ -1,4 +1,4 @@
 [submodule "foreman-installer"]
-        path = tftp
+        path = foreman-installer 
         url = https://github.com/theforeman/foremen-installer.git
 

@@ -16,12 +16,12 @@
 [submodule "modules/git"]
 	path = modules/git
 	url = https://github.com/theforeman/puppet-git.git
-[submodule "modules/passenger"]
-	path = modules/passenger
-	url = https://github.com/theforeman/puppet-passenger.git
 [submodule "modules/puppet"]
 	path = modules/puppet
 	url = https://github.com/theforeman/puppet-puppet.git
 [submodule "modules/xinetd"]
 	path = modules/xinetd
 	url = https://github.com/theforeman/puppet-xinetd.git
+[submodule "modules/apache"]
+	path = modules/apache
+	url = git@github.com:zivis/puppet-apache.git

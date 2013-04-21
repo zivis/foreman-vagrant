@@ -18,7 +18,7 @@
 	url = https://github.com/theforeman/puppet-git.git
 [submodule "modules/puppet"]
 	path = modules/puppet
-	url = https://github.com/theforeman/puppet-puppet.git
+	url = git://github.com/zivis/puppet-puppet.git 
 [submodule "modules/xinetd"]
 	path = modules/xinetd
 	url = https://github.com/theforeman/puppet-xinetd.git
@@ -27,7 +27,7 @@
 	url = https://github.com/theforeman/puppet-tftp.git
 [submodule "modules/apache"]
 	path = modules/apache
-	url = git@github.com:zivis/puppet-apache.git
+	url = git://github.com:zivis/puppet-apache.git
 [submodule "modules/passenger"]
 	path = modules/passenger
-	url = git@github.com:zivis/puppet-passenger.git
+	url = git://github.com:zivis/puppet-passenger.git

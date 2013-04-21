@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network :private_network, ip: "192.168.33.10"
+  config.vm.network :private_network, ip: "192.168.33.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
   #
    config.vm.provider :virtualbox do |vb|
      # Don't boot with headless mode
-     vb.gui = true
+     vb.gui = true 
   
   #  # Use VBoxManage to customize the VM. For example to change memory:
   #   vb.customize ["modifyvm", :id, "--memory", "1024"]
@@ -55,10 +55,10 @@ Vagrant.configure("2") do |config|
   #
   # An example Puppet manifest to provision the message of the day:
   #
-  # # group { "puppet":
-  # #   ensure => "present",
-  # # }
-  # #
+  # #group { "puppet":
+  # #  ensure => "present",
+  # #}
+  # # include foreman_install  
   # # File { owner => 0, group => 0, mode => 0644 }
   # #
   # # file { '/etc/motd':
@@ -67,6 +67,7 @@ Vagrant.configure("2") do |config|
   # # }
   #
    config.vm.provision :puppet do |puppet|
+     puppet.module_path = "modules"
      puppet.manifests_path = "manifests"
      puppet.manifest_file  = "init.pp"
    end

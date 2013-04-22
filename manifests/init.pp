@@ -30,6 +30,14 @@ if ! $::lsbdistcodename {
   }
 }
 
+exec { "apt-get update":
+    command => "/usr/bin/apt-get update"
+}
+if $osfamily == 'Debian' {
+    Package { require => Exec['apt-get update'] }
+  }
+
+
 include foreman
 include foreman_proxy
 include puppet
